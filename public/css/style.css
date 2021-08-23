@@ -1,14 +1,28 @@
 *{
     font-family: 'Merriweather', serif;
     box-sizing: border-box;
+    
 }
 
+.btn-primary {
+    color: #fff;
+    background-color: black;
+    border-color: gray;
+}
+
+.btn-outline-success {
+    color: black;
+    border-color: black;
+}
+
+button{
+    font: 'Merriweather', serif;
+}
 
 /*.card{
     width: 25%;
     margin: 20px;
     border: 1px solid rgba(128, 128, 128, 0.288);
-}
 
 
 
@@ -19,7 +33,7 @@
 }*/
 
 .container-fluid ul{
-display: flex;
+
 list-style: none;
 text-decoration: none;
 align-items: center;

@@ -47,7 +47,6 @@ app.get('/contacto', (req, res)=>{
 
 
 
-
 app.get('/productos',  (req, res)=>{
     data.getAllProductos((error, data)=>{
         if(error){
@@ -65,6 +64,40 @@ app.get('/productos',  (req, res)=>{
   
 })
 
+app.get('/botas',  (req, res)=>{
+    data.getAllProductos((error, data)=>{
+        if(error){
+            return res.send({
+                error
+            })
+        }
+        const JSONBody = JSON.parse(data);
+        return res.render('pages/botas', {
+            title,
+            JSONBody
+        });
+
+    })
+  
+})
+
+app.get('/zapatos',  (req, res)=>{
+    data.getAllProductos((error, data)=>{
+        if(error){
+            return res.send({
+                error
+            })
+        }
+        const JSONBody = JSON.parse(data);
+        return res.render('pages/zapatos', {
+            title,
+            JSONBody,
+            
+        });
+
+    })
+  
+})
 
 
 

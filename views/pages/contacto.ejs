@@ -4,26 +4,23 @@
 
 <body>
     <%-include('../partials/header') %>
-    <section>
-        <div class="card-group">
-            <div class="row">
-                <% JSONBody.forEach(productos => { %>
-                
-                <div class=" col-md-4 col-sm-12 col-xl-3
-                ">
-            <img src="<%= productos.img %>"  class="card-img-top" alt="Borcegos">
-              
-              <div class="card-body">
-                <h4 class="card-title"><%= productos.name %></h4>
-                <h5 class="card-text"><%= productos.price %></h5>
-              </div>
-            </div>
-            
-            
-            <% }) %>
+   
+    
+     
+      
+
+      <div class="card">
+        <div class="card-header">
+          DATOS DE CONTACTO
         </div>
-</div>
-</section>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>(3624) 0303456</p>
+            <footer class="blockquote-footer">Encontranos en  <cite title="Source Title">Cabildo 500</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+
     <%-include('../partials/footer') %>
     
 </body>
