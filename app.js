@@ -46,39 +46,7 @@ app.get('/contacto', (req, res)=>{
 
 
 
-app.get('/borcegos',  (req, res)=>{
-    data.getAllProductos((error, data)=>{
-        if(error){
-            return res.send({
-                error
-            })
-        }
-        const JSONBody = JSON.parse(data);
-        return res.render('pages/borcegos', {
-            title,
-            JSONBody
-        });
 
-    })
-  
-})
-
-app.get('/zapatos',  (req, res)=>{
-    data.getAllProductos((error, data)=>{
-        if(error){
-            return res.send({
-                error
-            })
-        }
-        const JSONBody = JSON.parse(data);
-        return res.render('pages/zapatos', {
-            title,
-            JSONBody
-        });
-
-    })
-  
-})
 
 app.get('/productos',  (req, res)=>{
     data.getAllProductos((error, data)=>{
@@ -97,56 +65,7 @@ app.get('/productos',  (req, res)=>{
   
 })
 
-app.get('/botas',  (req, res)=>{
-    data.getAllProductos((error, data)=>{
-        if(error){
-            return res.send({
-                error
-            })
-        }
-        const JSONBody = JSON.parse(data);
-        return res.render('pages/botas', {
-            title,
-            JSONBody
-        });
 
-    })
-  
-})
-
-app.get('/texanas',  (req, res)=>{
-    data.getAllProductos((error, data)=>{
-        if(error){
-            return res.send({
-                error
-            })
-        }
-        const JSONBody = JSON.parse(data);
-        return res.render('pages/texanas', {
-            title,
-            JSONBody
-        });
-
-    })
-  
-})
-
-app.get('/zapatillas',  (req, res)=>{
-    data.getAllProductos((error, data)=>{
-        if(error){
-            return res.send({
-                error
-            })
-        }
-        const JSONBody = JSON.parse(data);
-        return res.render('pages/zapatillas', {
-            title,
-            JSONBody
-        });
-
-    })
-  
-})
 
 
 
